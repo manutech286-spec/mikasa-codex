@@ -1,0 +1,11 @@
+[project]
+name = "mikasa-codex"
+version = "0.1.0"
+description = "Modular desktop AI assistant"
+requires-python = ">=3.11"
+
+dependencies = [
+    "PySide6",
+    "pydantic",
+    "pytest"
+]
