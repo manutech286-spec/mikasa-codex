@@ -1,0 +1,19 @@
+[app]
+name = "MIKASA CODEX Lab"
+environment = "development"
+
+[database]
+path = "./var/mikasa_codex.db"
+
+[features]
+enable_improver = true
+enable_sync = false
+enable_tts = false
+
+[llm]
+provider = "mock"
+model = "mock-v1"
+api_key_env = "MIKASA_LLM_API_KEY"
+
+[ui]
+theme = "dark"

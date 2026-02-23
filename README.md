@@ -1,13 +1,28 @@
-# MIKASA CODEX
+# MIKASA CODEX (Lab)
 
-Ultra-advanced modular desktop AI assistant for veterinary use.
+Parallel lab project for a production-grade, modular desktop veterinary assistant core.
 
-Stack:
+## Stack
 - Python 3.11
-- PySide6
-- SQLite
-- Modular architecture
-- Desktop-first
+- PySide6 desktop UI
+- SQLite persistence
+- Pytest
 
-Status:
-In active development.
+## Run
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+python -m app.tools.migrate
+python -m app.main
+```
+
+## Rollback migrations
+```bash
+python -m app.tools.rollback --to 001
+```
+
+## Tests
+```bash
+pytest
+```
